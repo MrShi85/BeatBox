@@ -71,7 +71,8 @@ public class BeatBoxFragment extends Fragment {
 
         @Override
         public void onBindViewHolder(SoundHolder holder, int position) {
-
+            Sound sound = mSounds.get(position);
+            holder.bindSound(sound);
         }
 
         @Override
